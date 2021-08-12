@@ -39,9 +39,9 @@ class App extends Component {
 
 
      {/*to pass all props to child component use  render={(props) => (
-        <parent {...props})(in this component props is:this.props) />  
+        <parent {...props})(in class component, the props is:this.props) />  
         Or use render={(props) => (
-        <parent {... [props,this.props]})  if you want props params, match, location,... */}
+        <parent {... [props,this.props]}) use "props" if you want props :params, match, location,... */}
 
       <Route exact path='/rooms' render={(props) => (
              <Rooms {...this.props}  />
